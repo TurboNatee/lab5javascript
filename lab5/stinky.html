@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>prac5pt2</title>
+  <script>
+    function changer(){
+
+        let all = document.getElementsByTagName('strong');
+        for(let i=0; i<all.length; i++){
+            all[i].style.color = "red";
+        }
+
+
+    }
+    function changer1(){
+        let all = document.getElementsByTagName('strong');
+        for(let i=0; i<all.length; i++){
+            all[i].style.color = "black";
+        }
+
+    }
+
+
+  </script>
+</head>
+<body>
+<p onmouseover="changer()" onmouseout="changer1()">hover over to change bold text</p>
+<p>In the <strong>case</strong> of a selector with <strong>elements</strong></p>
+
+</body>
+</html>
